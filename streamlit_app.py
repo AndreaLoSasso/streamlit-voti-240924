@@ -37,7 +37,7 @@ file_path_df = 'https://github.com/AndreaLoSasso/streamlit-voti-240924/blob/main
 
 try:
     # Read the CSV file while handling potential issues
-    df = pd.read_csv(file_path_df, skiprows=1, usecols=lambda x: x != 0, on_bad_lines='skip')
+    df = pd.read_csv(file_path_df,sep=';', encoding='utf-8', skiprows=1, usecols=lambda x: x != 0, on_bad_lines='skip')
     st.write(df)
 except pd.errors.ParserError as e:
     st.error(f"ParserError: {e}")
@@ -49,7 +49,7 @@ file_path_voti = 'https://github.com/AndreaLoSasso/streamlit-voti-240924/blob/ma
 
 try:
     # Read the CSV file while handling potential issues
-    df = pd.read_csv(file_path_voti, skiprows=1, usecols=lambda x: x != 0, on_bad_lines='skip')
+    df = pd.read_csv(file_path_voti, sep=';', encoding='utf-8', skiprows=1, usecols=lambda x: x != 0, on_bad_lines='skip')
     st.write(df)
 except pd.errors.ParserError as e:
     st.error(f"ParserError: {e}")
