@@ -38,7 +38,7 @@ df = pd.read_csv(file_path_df,header=0, usecols=lambda column: column != 'Unname
 
 # Caricamento del file per la seconda pagina
 file_path_voti = 'https://github.com/AndreaLoSasso/streamlit-voti-240924/blob/main/voti_comunali_bari_2024.csv'
-df = pd.read_csv(file_path_voti, header=1)
+df = pd.read_csv(file_path_voti, header=0)
 
 ### Contenuto della Prima Pagina ###
 if page == "Pagina 1":
