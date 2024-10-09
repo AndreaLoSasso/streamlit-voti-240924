@@ -26,7 +26,7 @@ image_size = 150  # Puoi regolare la dimensione qui
 
 # Prima immagine
 with col1:
-    st.image("https://raw.githubusercontent.com/AndreaLoSasso/political_networks/main/logo_DIF.png", width=700)
+    st.image("https://github.com/AndreaLoSasso/streamlit-voti-240924/blob/main/logo_DIF.png", width=700)
 
 
 # Aggiungi del margine per separare le immagini dal testo
