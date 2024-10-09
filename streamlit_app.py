@@ -34,11 +34,11 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 # Caricamento del file per la prima pagina
 file_path_df = 'https://github.com/AndreaLoSasso/streamlit-voti-240924/blob/main/240729_Modified_Elenco_Circoscrizioni_Refer.csv'
-df = pd.read_csv(file_path_df)
+df = pd.read_csv(file_path_df, skiprows=1, usecols=lambda x: x != 0)
 
 # Caricamento del file per la seconda pagina
 file_path_voti = 'https://github.com/AndreaLoSasso/streamlit-voti-240924/blob/main/voti_comunali_bari_2024.csv'
-df_voti = pd.read_csv(file_path_voti)
+df_voti = pd.read_csv(file_path_voti, skiprows=1, usecols=lambda x: x != 0)
 
 ### Contenuto della Prima Pagina ###
 if page == "Pagina 1":
