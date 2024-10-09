@@ -38,7 +38,7 @@ df = pd.read_csv(file_path_df, sep=';')
 
 # Caricamento del file per la seconda pagina
 file_path_voti = 'https://raw.githubusercontent.com/AndreaLoSasso/political_networks/main/voti_comunali_bari_2024.csv'
-df_voti = pd.read_csv(file_path_votisep=';')
+df_voti = pd.read_csv(file_path_voti, sep=';')
 
 ### Contenuto della Prima Pagina ###
 if page == "Pagina 1":
